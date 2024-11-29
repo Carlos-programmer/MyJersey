@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="titulo">
+        <h1>-BIENVENIDO-</h1>
+    </div>
+    <nav class="encabezado">
+        <div class="regis" id="navigation">
+            <p><a href="registrarse.php">Registrate</a></p>
+        </div>
+    </nav>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="fondo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <h1 class="title">Inicia Sesión</h1>
+    <div class="container">
+        <form action="login_user.php" method="POST" class="input-group">
+            <input type="text" class="input" name="usuario" minlength="8" required>
+            <label class="user-label">Usuario</label><br>    
+            <input type="password" class="input1" name="contraseña" required>
+            <label class="clave-label">Contraseña</label>                
+            <button type="submit">Entrar</button>
+            <div class="btnn">
+
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>Derechos de Autor &copy; MY JERSEYS 2024</p>
+    </footer>
+</body>
+</html>
